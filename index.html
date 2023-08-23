@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectHomeTest</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script defer src="./assets/js/main.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <a href="/" class="header__logo-link"><img src="./assets/images/logo.png" srcset="./assets/images/logo@2x.png 2x,./assets/images/logo@3x.png 3x," class="header__logo" alt="Логотип"></a>
+                <nav class="header__navigation navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__item"><a href="#" class="navigation__item-link">Главная</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__item-link">Галерея</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__item-link">Проекты</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__item-link">Сертификати</a></li>
+                        <li class="navigation__item"><a href="#" class="navigation__item-link">Контакты</a></li>
+                    </ul>
+                </nav>
+                <button class="header__navigation-button navigation-button">
+                    <span class="navigation-button__item"></span>
+                </button>
+                <div class="header__navigation-container"></div>
+            </header>
+            <main class="content">
+                <section class="introduction">
+                        <div class="introduction__row">
+                            <div class="introduction__col">
+                                <h1 class="introduction__title">Project<span>home</span></h1>
+                            </div>
+                            <div class="introduction__col">
+                                <div class="introduction__wrap">
+                                    <picture>
+                                        <source type="image/webp" srcset="./assets/images/introduction/introduction.webp">
+                                        <img class="introduction__image" src="./assets/images/introduction/introduction.png" alt="Контекстная картинка">
+                                    </picture>
+                                    <a href="#" class="introduction__link link"><span class="link-arrow--black">Взглянуть</span></a>
+                                </div>
+                            </div>
+                        </div>
+                </section>
+                <section class="about">
+                    <div class="about__row">
+                            <div class="about__col">
+                                <div class="about__group-image">
+                                    <picture>
+                                        <source type="image/webp" srcset="./assets/images/about/first.webp">
+                                        <img src="./assets/images/about/first.jpg" alt="Контекстная картинка" class="about__image-first">
+                                    </picture>
+                                    <picture>
+                                        <source type="image/webp" srcset="./assets/images/about/second.webp">
+                                        <img src="./assets/images/about/second.jpg" alt="Контекстная картинка" class="about__image-second">
+                                    </picture>
+                                    <picture>
+                                        <source type="image/webp" srcset="./assets/images/about/third.webp">
+                                        <img src="./assets/images/about/third.jpg" alt="Контекстная картинка" class="about__image-third">
+                                    </picture>                        
+                            </div>
+                        </div>
+                        <div class="about__col">
+                            <h2 class="about__title title">О компании</h2>
+                            <span class="about__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</span>
+                            <a href="#" class="about__link link"><span class="link-arrow--black">Читать</span></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="tasks">
+                    <h3 class="tasks__title title">Основные задачи</h3>
+                    <div class="tasks__row">
+                        <div class="tasks__col">   
+                            <span class="tasks__item">Создание комфортных условий и повышение качества обслуживания клиентов</span>
+                        </div>
+                        <div class="tasks__col">
+                                <span class="tasks__item">Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</span>               
+                        </div>
+                    </div>
+                </section>
+                <section class="projects">
+                    <h4 class="projects__title title">Наши проекты</h4>
+                    <div class="projects__image-container">
+                        <div class="projects__first-wrap">
+                                <img src="./assets/images/projects/first.jpg" alt="Контекстная картинка" class="projects__image-first">              
+                            <div class="projects__first-item">
+                                <span>ДОСУГОВЫЙ ЦЕНТР</span>
+                                <a href="#" class="link link--transparent "><span>Подробнее</span></a>
+                            </div>
+                        </div>
+                            <img src="./assets/images/projects/second.jpg" alt="Контекстная картинка" class="projects__image-second">
+                            <img src="./assets/images/projects/third.jpg" alt="Контекстная картинка" class="projects__image-third">
+                            <img src="./assets/images/projects/fourth.jpg" alt="Контекстная картинка" class="projects__image-fourth">
+                            <img src="./assets/images/projects/fifth.jpg" alt="Контекстная картинка" class="projects__image-fifth">
+                    </div>
+                    <a href="#" class="link link--dark projects__link"><span class="link-arrow--white">Все проекты</span></a>
+                </section>
+                <section class="feedback">
+                    <h5 class="feedback__title title">Связаться с нами</h5>
+                    <div class="feedback__row">
+                        <div class="feedback__col">
+                            <form action="" class="feedback__form form">
+                                <fieldset>
+                                    <legend>Форма обратной связи</legend>
+                                        <label for="name">Имя:</label>
+                                        <input id='name' type="text" placeholder="Имя">
+                                        <label for="number">Номер телефона:</label>
+                                        <input id='number' type="tel" placeholder="Номер телефона">
+                                        <label for="email">E-mail:</label>
+                                        <input id='email' type="email" placeholder="E-mail">
+                                        <label for="product">Интересующий товар/услуга:</label>
+                                        <input id='product' type="text" placeholder="Интересующий товар/услуга">
+                                        <label for="message">Сообщение:</label>
+                                        <textarea id="message" placeholder="Сообщение"></textarea>
+                                </fieldset>
+                            </form>
+                            <span class="feedback__text">Отправляя заявку Вы соглашаетесь c политикой конфиденциальности</span>
+                            <a href="#" class="link link--dark feedback__link"><span class="link-arrow--white">Отправить</span></a>
+                        </div>
+                        <div class="feedback__col">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/images/feedback/feedback_image.webp">
+                                <img src="./assets/images/feedback/feedback_image.jpg" class="feedback__image" alt="Контекстная картинка">
+                            </picture>           
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+            <footer class="footer">
+                <div class="footer__top">
+                    <div class="footer__top-row">
+                        <div class="footer__top-col">
+                            <a href="/" class="footer__logo-link"><img src="./assets/images/logo_white.png" srcset="./assets/images/logo_white@2x.png 2x,./assets/images/logo_white@3x.png 3x," class="footer__logo" alt="Логотип"></a>
+                            <div class="feedback__top-accordion accordion">
+                                <div class="accordion__item">Информация</div>
+                                <div class="accordion__container accordion__container-navigation"></div>
+                                <div class="accordion__item">Контакты</div>
+                                <div class="accordion__container accordion__container-contact"></div>
+                                <div class="accordion__item">Социальные сети</div>
+                                <div class="accordion__container accordion__container-social"></div>
+                            </div>
+                        </div>
+                        <div class="footer__top-col">
+                            <span class="footer__top-title">Информация</span>
+                            <nav class="footer__top-navigation navigation">
+                                <ul class="navigation__list navigation__vertical-list">
+                                    <li class="navigation__item footer_navigation-item"><a href="#" class="navigation__item-link item-link--white">Главная</a></li>
+                                    <li class="navigation__item footer_navigation-item"><a href="#" class="navigation__item-link item-link--white">Галерея</a></li>
+                                    <li class="navigation__item footer_navigation-item"><a href="#" class="navigation__item-link item-link--white">Проекты</a></li>
+                                    <li class="navigation__item footer_navigation-item"><a href="#" class="navigation__item-link item-link--white">Сертификати</a></li>
+                                    <li class="navigation__item footer_navigation-item"><a href="#" class="navigation__item-link item-link--white">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer__top-col">
+                            <span class="footer__top-title">Контакты</span>
+                            <address class="footer__top-contact contact">
+                                    <span class="contact__addres">100000, Республика  Казахстан, 
+                                        г. Караганда, ул. Телевизионная 10</span>
+                                    <span class="contact__number">+38 (000) 000 00 00</span>
+                                    <span class="contact__email">mail@gmail.com</span>
+                            </address>
+                        </div>
+                        <div class="footer__top-col">
+                            <div class="footer__top-wrap">  
+                            <span class="footer__top-title">Социальные сети</span>
+                                <div class="footer__top-group social-media">
+                                    <a href="#" class="social-media__link"><img class="social-media__icon" src="./assets/images/footer/facebook_icon.svg" alt="Ссылка фейсбук"></a>
+                                    <a href="#" class="social-media__link"><img class="social-media__icon" src="./assets/images/footer/instagram_icon.svg" alt="Ссылка твитер"></a>
+                                    <a href="#" class="social-media__link"><img class="social-media__icon" src="./assets/images/footer/linkedin_icon.svg" alt="Ссылка инстаграм"></a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <span class="footer__bottom-copyright">© 2019 Digital Project. Все права защищены.</span>
+                </div>
+            </footer>
+        </div>
+</body>
+</html>
